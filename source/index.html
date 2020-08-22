@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body>
+  <header class="main-header">
+    <nav class="main-nav">
+      <a href="" class="main-nav__logo">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="./img/logotype-desktop.svg">
+          <source media="(min-width: 768px)" srcset="./img/logotype-tablet.svg">
+          <img class="main-nav__image" srcset="./img/logotype-mobile.svg" alt="Логотип">
+        </picture>
+      </a>
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a href="" class="main-nav__link">Главная</a></li>
+        <li class="main-nav__item">
+          <a href="" class="main-nav__link">Фотографии</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="" class="main-nav__link">Конкурс</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="" class="main-nav__link">HTML Academy</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="main-intro">
+      <h2 class="main-intro__title">Конкурс на самое безбашенное путешествие с Пинк</h2>
+    </div>
+  </header>
+  <main>
+    <section class="forms">
+      <div class="forms__intro">
+        <p class="forms__introduction">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span class="forms__introduction--hidden">Пожалуйста, заполните форму ниже:</span></p>
+        <form action="#" method="get">
+          <div class="forms__list">
+            <div class="forms__item forms__item--user">
+              <ul class="forms__wrapper forms__wrapper--user">
+                <li class="forms__id">
+                  <label class="forms__label forms__label--user" for="lastname">Фамилия:</label>
+                  <div class="forms__container forms__container--id">
+                    <input type="text" class="forms__input" id="lastname" placeholder="Укажите фамилию *">
+                  </div>
+                </li>
+                <li class="forms__id">
+                  <label class="forms__label forms__label--user" for="firstname">Имя:</label>
+                  <div class="forms__container forms__container--id">
+                    <input type="text" class="forms__input" id="firstname"placeholder="Введите ваше имя *">
+                  </div>
+                </li>
+                <li class="forms__id">
+                  <label class="forms__label forms__label--user" for="fathername">Отчество:</label>
+                  <div class="forms__container forms__container--fathername">
+                    <input type="text" class="forms__input" id="fathername" placeholder="Ну и отчество тоже">
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="forms__item forms__item--device">
+              <div class="forms__border forms__border--device">
+                <h3 class="forms__title forms__title--device">С каким приложением путешествовали?</h3>
+              </div>
+              <ul class="forms__wrapper forms__wrapper--device">
+                <li class="forms__device">
+                  <label class="forms__label">
+                    <input type="radio" class="visually-hidden forms__radio" name="device">
+                    <span class="forms__indicator forms__indicator--radio" tabindex="0"></span>
+                    <span class="forms__option forms__option--device">Pink для iOS</span>
+                </label>
+                </li>
+                <li class="forms__device">
+                  <label class="forms__label">
+                    <input type="radio" class="visually-hidden forms__radio" name="device">
+                    <span class="forms__indicator forms__indicator--radio" tabindex="0"></span>
+                    <span class="forms__option forms__option--device">Pink на Android</span>
+                </label>
+                </li>
+                <li class="forms__device">
+                  <label class="forms__label">
+                    <input type="radio" class="visually-hidden forms__radio" name="device">
+                    <span class="forms__indicator forms__indicator--radio" tabindex="0"></span>
+                    <span class="forms__option forms__option--device">Windows Phone</span>
+                </label>
+                </li>
+              </ul>
+            </div>
+            <div class="forms__item forms__item--contacts">
+              <div class="forms__border">
+                <h3 class="forms__title forms__title--contacts">Контактная информация</h3>
+              </div>
+              <ul class="forms__wrapper forms__wrapper--contacts">
+                <li class="forms__feedback">
+                  <div class="forms__container forms__container--phone">
+                    <input type="tel" class="forms__input" id="phone" placeholder="Номер, пожалуйста" pattern="[0-9]{1}-[0-9]{10}">
+                  </div>
+                  <label class="forms__label forms__label--contacts" for="phone">Номер телефона</label>
+                </li>
+                <li class="forms__feedback">
+                  <div class="forms__container forms__container--email">
+                    <input type="email" class="forms__input" id="email" placeholder="Введите почту *" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                  </div>
+                  <label class="forms__label forms__label--contacts" for="email">Адрес почты</label>
+                </li>
+              </ul>
+            </div>
+            <div class="forms__item forms__item--memories">
+              <div class="forms__border">
+                <h3 class="forms__title forms__title--memories">Ваши безбашенные достижения в путешествии</h3>
+              </div>
+              <ul class="forms__wrapper forms__wrapper--memories">
+                <li class="forms__feats">
+                  <label name="selfie" class="forms__label">
+                    <input type="checkbox" class="visually-hidden forms__checkbox">
+                    <span class="forms__indicator forms__indicator--checkbox"></span>
+                    <span class="forms__option forms__option--feats">Сделал селфи с акулой</span>
+                  </label>
+                </li>
+                <li class="forms__feats">
+                  <label name="norris" class="forms__label">
+                    <input type="checkbox" class="visually-hidden forms__checkbox">
+                    <span class="forms__indicator forms__indicator--checkbox"></span>
+                    <span class="forms__option forms__option--feats">Видел Чака Норриса</span>
+                  </label>
+                </li>
+                <li class="forms__feats">
+                  <label name="tower" class="forms__label">
+                    <input type="checkbox" class="visually-hidden forms__checkbox">
+                    <span class="forms__indicator forms__indicator--checkbox"></span>
+                    <span class="forms__option forms__option--feats">Удержал башню</span>
+                  </label>
+                </li>
+                <li class="forms__feats">
+                  <label name="beach" class="forms__label">
+                    <input type="checkbox" class="visually-hidden forms__checkbox">
+                    <span class="forms__indicator forms__indicator--checkbox"></span>
+                    <span class="forms__option forms__option--feats">Обгорел на пляже</span>
+                  </label>
+                </li>
+                <li class="forms__feats">
+                  <label name="gifts" class="forms__label">
+                    <input type="checkbox" class="visually-hidden forms__checkbox">
+                    <span class="forms__indicator forms__indicator--checkbox"></span>
+                    <span class="forms__option forms__option--feats">Накупил сувениров</span>
+                  </label>
+                </li>
+                <li class="forms__feats forms__feats--hotel">
+                  <label name="hotel" class="forms__label">
+                    <input type="checkbox" class="visually-hidden forms__checkbox">
+                    <span class="forms__indicator forms__indicator--checkbox"></span>
+                    <span class="forms__option forms__option--feats">Разгромил отель</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="forms__item forms__item--comments">
+              <div class="forms__border forms__border--comments">
+                <h3 class="forms__title forms__title--comments">Опишите свои эмоции</h3>
+              </div>
+              <textarea class="forms__comments" cols="30" rows="4" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            </div>
+            <div class="forms__send">
+              <input type="submit" value="Отправить форму" class="forms__button">
+              <span class="forms__requirments">* &ndash; обязательные для заполнения поля</span>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-page">
+      <a href="#" class="footer-page__logo">
+        <picture>
+          <source media="min-width: 1200px" srcset="./img/logotype-foot-desktop.svg">
+          <source media="min-width: 768px" srcset="#">
+          <img class="main-nav__image" srcset="./img/logotype-foot-desktop.svg" alt="Логотип" width="147" height="40">
+        </picture>
+      </a>
+      <div class="footer-page__social">
+        <span><a class="footer-page__link footer-page__link--twitter" href="#" aria-label="Седона в Твиттере"></a></span>
+        <span><a class="footer-page__link footer-page__link--facebook" href="#" aria-label="Седона на Фейсбуке"></a></span>
+        <span><a class="footer-page__link footer-page__link--youtube" href="#" aria-label="Седона в Ютьюбе"></a></span>
+      </div>
+      <div class="footer-page__sign">
+        <a href="#" class="footer-page__authors">
+          <span class="footer-page__icon">Разработано</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

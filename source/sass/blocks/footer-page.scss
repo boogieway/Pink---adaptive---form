@@ -1,0 +1,281 @@
+@import "variables";
+
+.footer-page {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 65px;
+  box-sizing: border-box;
+  padding-right: 20px;
+  padding-left: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.footer-page__logo {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.footer-page__social {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-page__link {
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  width: 51px;
+  height: 51px;
+  background-color: $white;
+  border: 2px solid $grey;
+  border-radius: 50%;
+  position: relative;
+
+  &--twitter {
+    right: 15px;
+
+    &:after {
+      display: inline-block;
+      content: "";
+      width: 18px;
+      height: 14px;
+      position: absolute;
+      left: 18px;
+      top: 17px;
+      background-image: url('../img/twitter.png');
+    }
+  }
+
+  &--facebook:after {
+    display: inline-block;
+    content: "";
+    width: 9px;
+    height: 18px;
+    position: absolute;
+    left: 21px;
+    top: 15px;
+    background-image: url('../img/facebook.png');
+  }
+
+  &--youtube {
+    left: 15px;
+
+    &:after {
+      display: inline-block;
+      content: "";
+      width: 15px;
+      height: 13px;
+      position: absolute;
+      left: 20px;
+      top: 19px;
+      background-image: url('../img/youtube.png');
+    }
+  }
+}
+
+.footer-page__sign {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-page__authors {
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
+  color: $black;
+}
+
+.footer-page__icon {
+  margin: 0;
+  padding: 0;
+  padding-left: 14px;
+  padding-right: 40px;
+  position: relative;
+  top: 13px;
+
+  &::after {
+    display: inline-block;
+    content: "";
+    width: 27px;
+    height: 34px;
+    position: absolute;
+    right: 0;
+    background-image: url('../img/academy.png');
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .footer-page {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 75px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer-page__logo {
+    margin: 0;
+    padding: 0;
+    padding-left: 20px;
+    flex-basis: 33%;
+    text-align: left;
+  }
+
+  .footer-page__social {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    flex-basis: 195px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .footer-page__link {
+    &--twitter {
+      right: 0;
+    }
+
+    &--youtube {
+      left: 0;
+    }
+  }
+
+  .footer-page__sign {
+    margin: 0;
+    padding: 0;
+    padding-right: 20px;
+    display: inline-block;
+    flex-basis: 33%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .footer-page__authors {
+    margin-left: auto;
+  }
+}
+
+// выравнивание трех блоков - 
+// 2 крайних блока с базисом по 33% и центральный блок задаем точно в пикселях
+
+
+@media (min-width: $desktop-width) {
+
+  .footer-page {
+    padding-right: 132px;
+    padding-left: 132px;
+  }
+
+  .footer-page__logo {
+    margin: 0;
+    padding: 0;
+    flex-basis: 33%;
+  }
+
+  .footer-page__social {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    flex-basis: 195px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .footer-page__link {
+    display: inline-block;
+    width: 51px;
+    height: 51px;
+    background-color: $white;
+    border: 2px solid $grey;
+    border-radius: 50%;
+    position: relative;
+
+    &--twitter:after {
+      display: inline-block;
+      content: "";
+      width: 18px;
+      height: 14px;
+      position: absolute;
+      left: 18px;
+      top: 17px;
+      background-image: url('../img/twitter.png');
+    }
+
+    &--facebook:after {
+      display: inline-block;
+      content: "";
+      width: 9px;
+      height: 18px;
+      position: absolute;
+      left: 21px;
+      top: 15px;
+      background-image: url('../img/facebook.png');
+    }
+
+    &--youtube:after {
+      display: inline-block;
+      content: "";
+      width: 15px;
+      height: 13px;
+      position: absolute;
+      left: 20px;
+      top: 19px;
+      background-image: url('../img/youtube.png');
+    }
+  }
+
+  .footer-page__sign {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    flex-basis: 33%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .footer-page__authors {
+    margin-left: auto;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    color: $black;
+  }
+
+  .footer-page__icon {
+    margin: 0;
+    padding: 0;
+    padding-left: 14px;
+    padding-right: 40px;
+    position: relative;
+    top: 13px;
+
+    &::after {
+      display: inline-block;
+      content: "";
+      width: 27px;
+      height: 34px;
+      position: absolute;
+      right: 0;
+      background-image: url('../img/academy.png');
+    }
+  }
+}
